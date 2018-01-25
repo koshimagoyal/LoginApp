@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "892347036217",
+    "firebase_url": "https://loginapp-644d9.firebaseio.com",
+    "project_id": "loginapp-644d9",
+    "storage_bucket": "loginapp-644d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892347036217:android:e4bf736fbb53e475",
+        "android_client_info": {
+          "package_name": "com.example.lenovo.loginapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892347036217-dsc7furd2tbiqm0gv1l8g9oqvirjmu1t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lenovo.loginapp",
+            "certificate_hash": "fbdba25186fa16923123c5b52b4d136438a088ec"
+          }
+        },
+        {
+          "client_id": "892347036217-qg9iapgrp7r14q2bm8olauqd5m1moi6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmgos7GqpwkPt-UNHQBLXCkZ58xRAVT7w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892347036217-qg9iapgrp7r14q2bm8olauqd5m1moi6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
