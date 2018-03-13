@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.loginapp.Login"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorSkyBlue"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="First Name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+                android:textColor="@color/colorBlack" />
+
+            <EditText
+                android:id="@+id/fname1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.4"
+                android:background="@color/colorEdit"
+                android:gravity="center"
+                android:hint="First Name"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Last Name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+                android:textColor="@color/colorBlack" />
+
+            <EditText
+                android:id="@+id/lname1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.4"
+                android:background="@color/colorEdit"
+                android:gravity="center"
+                android:hint="First Name"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Submit"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.lenovo.loginapp.MainActivity">
@@ -101,28 +100,36 @@
                     android:text="Gender"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
                     android:textColor="@color/colorBlack" />
+                <RadioGroup
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
 
-                <RadioButton
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="0.6"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="10dp"
-                    android:text="Male"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
-                    android:textColor="@color/colorBlack" />
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.6"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Male"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+                        android:textColor="@color/colorBlack" />
+                    <RadioButton
+                        android:id="@+id/fem"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.6"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Female"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+                        android:textColor="@color/colorBlack" />
 
-                <RadioButton
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_weight="0.6"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="10dp"
-                    android:text="Female"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
-                    android:textColor="@color/colorBlack" />
+                </RadioGroup>
+
             </LinearLayout>
 
             <LinearLayout
@@ -266,6 +273,39 @@
                     android:layout_weight="0.6"
                     android:gravity="center_vertical"
                     android:paddingLeft="10dp"
+                    android:text="Mobile No"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.4"
+                    android:background="@color/colorEdit"
+                    android:gravity="center"
+                    android:hint="Mobile No"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
                     android:text="Pin Code"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
                     android:textColor="@color/colorBlack" />
@@ -370,79 +410,12 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="20dp">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="0.6"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="10dp"
-                    android:text="Mobile No"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
-                    android:textColor="@color/colorBlack" />
-
-                <EditText
-                    android:id="@+id/mobile"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="10dp"
-                    android:layout_weight="1.4"
-                    android:background="@color/colorEdit"
-                    android:gravity="center"
-                    android:hint="Mobile No"
-                    android:imeOptions="actionNext"
-                    android:singleLine="true"
-                    android:textColor="@color/colorBlack" />
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="20dp">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="0.6"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="10dp"
-                    android:text="Pin Code"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
-                    android:textColor="@color/colorBlack" />
-
-                <EditText
-                    android:id="@+id/pinc"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="10dp"
-                    android:layout_weight="1.4"
-                    android:background="@color/colorEdit"
-                    android:gravity="center"
-                    android:hint="Pin Code"
-                    android:imeOptions="actionNext"
-                    android:singleLine="true"
-                    android:textColor="@color/colorBlack" />
-            </LinearLayout>
-
-
             <Button
                 android:id="@+id/btnSave"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:background="@color/colorAccent"
-                android:onClick="send"
+                android:background="@color/colorPrimaryDark"
                 android:text="Submit"
                 android:textColor="@color/colorBlack" />
 
